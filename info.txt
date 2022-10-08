@@ -1,0 +1,12 @@
+1.- Instalación de Tailwin
+    npm install -D tailwincss postcss autoprefixer
+2.- Creamos los archivos postcss.cjs y tailwind.config.cjs
+    npx tailwincss init -p
+3.- Agregamos paquetes de tailwind en index.css
+    @import 'tailwin/base';
+    @import 'tailwin/components';
+    @import 'tailwin/utilities';
+4.- En el archivo tailwind.config.cjs, en content, añadimos los archivos en donde se 
+    alpicará tailwind.
+    content: [ './index.html', '/.src/**/*.jsx']
+
